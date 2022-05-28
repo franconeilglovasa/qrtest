@@ -15,7 +15,7 @@
     <input type="text" ng-model="vm.code" id="fname" name="fname">
     <input type="text" ng-model="vm.url" id="fname" name="fname">
 
-    <button ng-click="vm.addQr(vm.code)"></button>
+    <button ng-click="vm.addQr(vm.code)">SEND QR</button>
 
 
 </div>
@@ -37,7 +37,7 @@
             vm.cameraRequested = false;
 
             vm.start = function () {
-                vm.cameraRequested = false
+                vm.cameraRequested = true;
             }
 
             vm.processURLfromQR = function (url) {
