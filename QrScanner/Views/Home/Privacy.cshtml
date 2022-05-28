@@ -6,9 +6,9 @@
     <div>
         <bc-qr-reader
                       active="vm.cameraRequested"
-                      on-result="processURLfromQR"
+                      on-result="vm.processURLfromQR"
                       on-error="onError"
-                      camera-status="cameraIsOn" width="200px" height="200px">
+                      camera-status="vm.cameraIsOn" width="200px" height="200px">
         </bc-qr-reader>
     </div>
     <p>QR code detected!</p>
@@ -24,7 +24,8 @@
 
 
 @section Scripts{
-    <script>var app = angular.module("app-qr", ['ngSanitize', 'ngAnimate', 'ngTouch']);
+    <script>var app = angular.module("app-qr", ['ngSanitize', 'ngAnimate', 'ngTouch', 'webcam',
+            'bcQrReader']);
         //var app = angular.module("app-image-viewer", []);
 
         app.controller("qrController", function ($scope, $http, $timeout, $window, $filter, $location) {

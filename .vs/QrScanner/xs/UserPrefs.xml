@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{58A84595-1F54-4ACC-A056-B612BD9F6F8A}|Default">
+﻿<Properties StartupConfiguration="{58A84595-1F54-4ACC-A056-B612BD9F6F8A}|Default" GitUserInfo="UsingGIT">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.QrScanner FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.QrScanner PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
